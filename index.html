@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Supplies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chemical Supplies</h1>
+        <div class="toolbar">
+            <button onclick="addRow()">➕</button>
+            <button onclick="moveRowUp()">🔼</button>
+            <button onclick="moveRowDown()">🔽</button>
+            <button onclick="deleteRow()">🗑️</button>
+            <button onclick="refreshData()">🔄</button>
+            <button onclick="saveData()">💾</button>
+        </div>
+        <table id="chemicalTable">
+            <thead>
+                <tr>
+                    <th>ID <button onclick="sortTable(0)">↕️</button></th>
+                    <th>Chemical Name <button onclick="sortTable(1)">↕️</button></th>
+                    <th>Vendor <button onclick="sortTable(2)">↕️</button></th>
+                    <th>Density (g/m³) <button onclick="sortTable(3)">↕️</button></th>
+                    <th>Viscosity (m²/s) <button onclick="sortTable(4)">↕️</button></th>
+                    <th>Packaging <button onclick="sortTable(5)">↕️</button></th>
+                    <th>Pack Size <button onclick="sortTable(6)">↕️</button></th>
+                    <th>Unit <button onclick="sortTable(7)">↕️</button></th>
+                    <th>Quantity <button onclick="sortTable(8)">↕️</button></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
